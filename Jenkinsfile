@@ -8,11 +8,11 @@ node{
 
      stage('build'){
 
-        bat 'mvn clean install'
+        sh 'mvn clean install'
     }
 
      stage('Test'){
-      bat 'mvn test'
+      sh 'mvn test'
         
     }
      stage('Artifacts'){
